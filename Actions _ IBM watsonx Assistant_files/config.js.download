@@ -1,0 +1,59 @@
+/**
+ *
+ * IBM Confidential
+ *
+ * (C) Copyright IBM Corp. 2019, 2023
+ *
+ * The source code for this program is not published or otherwise
+ * divested of its trade secrets, irrespective of what has been
+ * deposited with the U. S. Copyright Office
+ *
+ * US Government Users Restricted Rights - Use, duplication or
+ * disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+ *
+ **/
+
+'use strict';
+
+(function () {
+
+  window.__webpack_public_path__ = '/';
+
+  var conversation = window.conversation = {};
+
+  conversation.config = {
+    endpoints : {
+      authenticate : '/rest/authenticate',
+      apiURL : "https://api.au-syd.assistant.watson.cloud.ibm.com",
+      bluemix : '/rest/bluemix',
+      content : '/rest/content',
+      store : '/rest',
+      feedback : '/rest/feedback',
+      logout : "https://iam.cloud.ibm.com/identity/logout",
+      webChat : "https://web-chat.global.assistant.watson.appdomain.cloud",
+      preview : "https://web-chat.global.assistant.watson.appdomain.cloud"
+    },
+    cloudConsoleUrl : 'https://cloud.ibm.com',
+    features : {"access-control":true,"actions-autolearn-new-ia":true,"actions-client-actions":false,"actions-generative-ai":true,"actions-generative-ai-base-llm":true,"actions-generative-ai-collect-verbatim":true,"actions-generative-ai-hap-filtering":true,"actions-generative-ai-slot-filling-multilingual":true,"actions-import-actions":false,"actions-intent-rename":false,"actions-new-ia-ai-guided":false,"actions-new-ia-boost-words":false,"actions-new-ia-launch-modes":true,"actions-new-ia-search-routing":false,"actions-show-create-action-panel-non-english":false,"actions-synonyms-recommendations":false,"analytics-unrecognized":true,"beta":false,"channel-transfer":true,"channels-segment-non-enterprise":false,"channels-sms-provider-genesys":true,"channels-sms-provider-custom":false,"cpd-version-4":false,"cristal-support":true,"dialog-new-ia-intent-conflicts":false,"dialog-new-ia-synonym-recommendations":false,"discovery-llm-conversational-search":false,"discovery-llm-conversational-search-multilingual":false,"discovery-search":true,"elastic-search-document-upload":true,"enable-log-message-webhook":false,"enable-premium-features":false,"enhanced-on-topic-classifier-default":true,"hotjar-tracking":false,"ia-ab-test-new-instance":false,"ia-access-updates":true,"ia-conversational-search-multi-turn":true,"ia-new-ia-enabled":true,"ia-ongoing-maintenance":false,"ia-upcoming-maintenance":false,"ia-wxo-agent-builder-features":false,"ia-wxo-classic-supported":false,"ia-wxo-dialog-supported":false,"integrations":true,"integrations-custom-update":true,"intent-conflicts":true,"intercom-integration":true,"llm-let-assistant-decide":false,"off-topic-v2":true,"open-entities":true,"channels-phone-enabled":false,"channels-phone-aws-enabled":false,"channels-phone-amazon-connect":false,"phone-soe-support":false,"channels-phone-audio-attestation":false,"channels-phone-genesys-audio-connector":false,"channels-phone-genesys-audio-connector-elevenlabs":false,"sap-conversational-search":false,"search":true,"search-skill-highlight-answers":true,"skill-versions":true,"spell-check":true,"spell-check-default":true,"synonym-recommendations":true,"transaction-ids":false,"twilio-text-integration":true,"web-experience":true,"web-experience-salesforce":true,"web-experience-zendeskweb":true},
+    languages : [{"label":"ARABIC","value":"ar","search":false,"enhanced-on-topic-classifier-default":true},{"label":"GERMAN","value":"de","enhanced-on-topic-classifier-default":true,"search":true},{"label":"ENGLISH_US","value":"en","autolearn-analytics":true,"enhanced-on-topic-classifier-default":true,"off-topic-v2":false,"open-entities":true,"search":true,"spell-check":true,"spell-check-default":true,"synonym-recommendations":true},{"label":"SPANISH","value":"es","enhanced-on-topic-classifier-default":true,"off-topic-v2":false,"search":true,"synonym-recommendations":true},{"label":"FRENCH","value":"fr","enhanced-on-topic-classifier-default":true,"off-topic-v2":false,"open-entities":true,"search":true,"spell-check":true,"spell-check-default":false,"synonym-recommendations":true},{"label":"ITALIAN","value":"it","enhanced-on-topic-classifier-default":true,"off-topic-v2":false,"search":true},{"label":"JAPANESE","value":"ja","search":true,"synonym-recommendations":true,"enhanced-on-topic-classifier-default":true},{"label":"KOREAN","value":"ko","search":true,"enhanced-on-topic-classifier-default":true},{"label":"BRAZILIAN_PORTUGUESE","value":"pt-br","enhanced-on-topic-classifier-default":true,"search":true},{"label":"CZECH","value":"cs","search":true,"enhanced-on-topic-classifier-default":true},{"label":"DUTCH","value":"nl","search":true,"enhanced-on-topic-classifier-default":true},{"label":"CHINESE_TRADITIONAL","value":"zh-tw","search":true,"enhanced-on-topic-classifier-default":true},{"label":"CHINESE_SIMPLIFIED","value":"zh-cn","enhanced-on-topic-classifier-default":true,"search":true},{"label":"LANGUAGE_AGNOSTIC","value":"xx","off-topic-v2":false,"open-entities":false,"search":true}],
+    segment : {"key":"XroYJWPOY9jAMsZSceoCmc6bWLd6Z7iD","src":"https://cloud.ibm.com/analytics/build/bluemix-analytics.min.js"},
+    deployEnv : "sydprd",
+    integrations : {"intercom":{"client_id":"fe417d6a-c124-4f3e-912f-8676c15e0e92","oauth_redirect_url":"https://au-syd.assistant.watson.cloud.ibm.com"}},
+    buildInfo : {"name":"wea-conversational-ui","description":"IBM Watson Conversation Tooling","version":"2.146.10","nodeEnv":"production","imageTag":"ui:20250806-220944-354-bbfc15d46","buildTime":"220944","buildDate":"20250806","gitCommit":"233a82"},
+    webExperience : {"versionHostname":"https://web-chat.assistant.watson.cloud.ibm.com","hostname":"https://web-chat.global.assistant.watson.appdomain.cloud"},
+    webSupport : {},
+    plusTrialLength : 30,
+    activityMonitor: {
+      enabled: false,
+      interval: 120000
+    },
+    baseUrl : '',
+    isWxoEnabled : false,
+    isAws : false,
+    isCpd : false,
+    isIbmCloud : true,
+    isSlotFillingEnabled : true,
+    cpdPrefix : '',
+  };
+
+})();
